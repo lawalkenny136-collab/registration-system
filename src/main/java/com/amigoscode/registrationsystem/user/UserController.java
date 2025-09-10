@@ -19,15 +19,6 @@ public class UserController {
         return userService.viewProfile(userId);
     }
 
-    @PostMapping("/register")
-    public void registerUser (@RequestBody User user) {
-        userService.registerUser(user);
-
-
-        
-        return;
-    }
-
     @GetMapping()
     public List <User> allUsers (){
         return userService.viewAllUsers();
